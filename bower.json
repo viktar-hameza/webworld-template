@@ -1,0 +1,7 @@
+{
+  "name": "myproject-bower",
+  "version": "1.0.0",
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.0.0"
+  }
+}
