@@ -1,0 +1,10 @@
+/* Generates @font-face */
+
+.font-face (@family, @file, @format: "opentype", @weight: normal, @style: normal) {
+  @font-face {
+    font-family: @family;
+    font-style:  @style;
+    font-weight: @weight;
+    src: url(@file) format(@format);
+  }
+}

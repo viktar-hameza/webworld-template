@@ -1,5 +1,38 @@
+/* Generates @font-face */
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansBold/PTSansBold.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSansItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff");
+}
 body {
-  background: green;
+  font-family: "PTSansRegular", "Arial", sans-serif;
+  font-size: 15px;
+  color: #9a9a9a;
 }
 .header__inner {
   background: #000;
