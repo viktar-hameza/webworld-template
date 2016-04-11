@@ -6,6 +6,23 @@ html {
   box-sizing: border-box;
 }
 
+*::-webkit-input-placeholder {
+  color: @color-garay--a6;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: @color-garay--a6;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: @color-garay--a6;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: @color-garay--a6;
+  opacity: 1;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -58,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: @min-width;
   &__top-bar {
     background: #252323;
-    padding: 17px 0;
+    padding: 16px 0;
   }
   &__logo-wrap {
     float: left;
@@ -85,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   &__search-wrap {
     float: right;
-    padding-top: 22px;
+    padding-top: 21px;
   }
 }
 
@@ -165,19 +182,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 35px 8px 20px;
     border: 1px solid #d6d6d6;
     font-size: 13px;
-    color: #a6a6a6;
+    color: @color-garay--a6;
   }
   &__input-btn {
     border: 0;
     padding: 0;
     margin: 0;
-
     position: absolute;
-    right: 0px;
-    top: 0;
+    right: 1px;
+    top: 1px;
+    padding-top: 4px;
     width: 34px;
-    height: 34px;
-    background: transparent;
+    height: 31px;
+    background: #fff;
     &:hover {
       .search__shape {
         transition: @transition;
@@ -189,19 +206,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-main {
   min-width: @min-width;
-  padding-top: 60px
+  padding-top: 55px
 }
 .info-block {
-  padding-bottom: 53px;
+  padding-bottom: 55px;
   &__title {
     margin: 0;
     padding-bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
   }
   &__content {
     margin: 0;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 49px;
   }
   &__row {
     margin: 0 -12px;
@@ -241,6 +259,21 @@ h1, h2, h3, h4, h5, h6 {
   background: @color-gray;
   border-top: 1px solid #f8f8f8;
   padding: 57px 0 66px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -29px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 31px 40px;
+    border-color: transparent transparent @color-gray transparent;
+  }
   &__row {
     margin: 0 -12px;
   }
@@ -318,9 +351,9 @@ h1, h2, h3, h4, h5, h6 {
 .page-footer {
   min-width: @min-width;
   &__info {
-    padding: 35px 0 40px;
+    padding: 31px 0 40px;
     font-size: @font-size--small;
-    background: #534e50;
+    background: #534e50 url(../img/bg--footer-top.png);
     color: @color-garay--c1;
     .container {
       overflow-x: hidden;
@@ -335,8 +368,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
   }
   &__other {
-    background: #212025;
-    padding: 30px 0 40px;
+    padding: 33px 0 40px;
+    background: #212025 url(../img/bg--footer-bottom.png);
   }
   &__copyright {
     float: left;
@@ -449,22 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 .svg-box {
   display: none;
 }
-.shape-rss {
-  width: 23px;
-  height: 23px;
-  fill: @color-garay--c1;
-}
-.shape-facebook {
-  width: 23px;
-  height: 23px;
-  fill: @color-garay--c1;
-}
-.shape-twitter {
-  width: 23px;
-  height: 23px;
-  fill: @color-garay--c1;
-}
-.shape-linkedin {
+.social-links__shape {
   width: 23px;
   height: 23px;
   fill: @color-garay--c1;
@@ -474,21 +492,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 18px;
   fill: #a6a6a6;
 }
-/* .shape-imac {
-  width: 112px;
-  height: 112px;
-  fill: #cacaca;
-}
-.shape-photo {
-  width: 112px;
-  height: 112px;
-  fill: #cacaca;
-}
-.shape-pencil {
-  width: 112px;
-  height: 112px;
-  fill: #00bac6;
-} */
+
 .feature__shape {
   width: 112px;
   height: 112px;
