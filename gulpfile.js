@@ -21,8 +21,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify');
 
 gulp.task('svgstore', function () {
-  return gulp
-    .src('svg/src/*.svg')
+  return gulp.src('svg/src/*.svg')
     .pipe(svgmin(function (file) {
       var prefix = path.basename(file.relative, path.extname(file.relative));
       return {

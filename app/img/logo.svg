@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="113" height="23" viewBox="0 0 113 23">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-size: 24px;
+      }
+
+      .cls-2 {
+        text-anchor: middle;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: "Pacifico";
+      }
+
+      .cls-4 {
+        fill: #00bac6;
+      }
+    </style>
+  </defs>
+  <text x="53" y="22" class="cls-1"><tspan x="53" class="cls-2"><tspan class="cls-3">Web<tspan class="cls-4">World</tspan></tspan></tspan></text>
+</svg>
